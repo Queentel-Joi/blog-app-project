@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Blog</h1>
+    </header>
+
+    <div class="container">
+        <div id="post-list-sidebar">
+            <h2>Blog Posts</h2>
+            <ul id="post-list">
+                <p>Loading posts...</p>
+            </ul>
+        </div>
+
+        <div id="post-detail-main">
+            <div id="post-detail">
+                <p>Click on a post title to see its details.</p>
+            </div>
+
+            <div id="edit-post-form" class="form-section hidden">
+                <h3>Update Post Details</h3>
+                <form>
+                    <label for="edit-post-title">Title:</label>
+                    <input type="text" id="edit-post-title" required>
+                    <label for="edit-post-content">Content:</label>
+                    <textarea id="edit-post-content" rows="5" required></textarea>
+                    <input type="hidden" id="edit-post-id"> <button type="submit">Update Post</button>
+                    <button type="button" id="cancel-edit-btn" class="cancel-button">Cancel</button>
+                </form>
+            </div>
+            
+            <div id="new-post-form-section" class="form-section">
+                <h3>Create New Post</h3>
+                <form id="new-post-form">
+                    <label for="new-post-title">Title:</label>
+                    <input type="text" id="new-post-title" required>
+                    <label for="new-post-author">Author:</label>
+                    <input type="text" id="new-post-author" required>
+                    <label for="new-post-image">Image URL:</label>
+                    <input type="text" id="new-post-image" placeholder="e.g., https://via.placeholder.com/600x400">
+                    <label for="new-post-content">Content:</label>
+                    <textarea id="new-post-content" rows="10" required></textarea>
+                    <button type="submit">Add New Post</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Blog App. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
